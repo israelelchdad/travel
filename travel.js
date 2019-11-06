@@ -12,7 +12,6 @@ let arrtravels=[
     {code:8,name:'hungaria',price:800},
     {code:9,name:'germnaia',price:900},
     {code:10,name:'maroko',price:1000}
-
 ]
 console.log(arrtravels)
 let str1='<tr><td>#code</td><td>#name</td><td>#price</td></tr>';
@@ -58,8 +57,21 @@ function setarr(far){
     })
   let v4=document.getElementById('b3');
   v4.innerHTML=str3;
+}
+function totaltravel(){
+    let sel=document.getElementById("select").value;
+    console.log(sel)
+    let far2=arr.filter(travels=>{return travels.city==sel});
+    console.log(far2)
+    let t=0;
+    far2.forEach(trav=>{
+        t+=trav.total2;
 
-
+    })
+    console.log(t)
+    let ttt="הריוח שלך ליעד "+sel +'= '+t +'<br>'+'<hr></hr>'
+    console.log(t)
+    document.getElementById("totolostravels").innerHTML+=ttt;
 }
 
  

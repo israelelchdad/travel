@@ -8,10 +8,11 @@
     <link rel="stylesheet" type="text/css" href="travel.css">
 </head>
 <body>
-<div>
-    <div class="d1">
+
+<div class="div1">
+    <div class="div2">
         <section class="s1">
-            <table class="ta" id="t1">
+            <table border="1" class="ta" id="t1">
                 <thead>
                     <tr>
                         <th> code</th>
@@ -25,16 +26,16 @@
             </table>
         </section>
         <section class="s1">
-            <label for="name">name</label><input id='name'><br>
-            <label for="menid">menid</label><input id='menid'><br>
-            <label for="travid">travid</label><input id='travid'><br>
-            <label for="passengers">passengers</label><input id='passengers'><br>
+            <label class="l1" for="name">name</label><input id='name'><br>
+            <label class="l1" for="menid">menid</label><input id='menid'><br>
+            <label class="l1" for="travid">travid</label><input id='travid'><br>
+            <label class="l1" for="passengers">passengers</label><input id='passengers'><br>
             <button onclick="sent()" id="sent">sent</button>
        </section>
     </div>
-    <div>
+    <div class="div3">
        <section class="s1">
-            <table class="ta" id="t2">
+            <table border="1" class="ta" id="t2">
                     <thead>
                         <tr>
                             <th> id</th>
@@ -53,7 +54,7 @@
         </section>
         <section class="s1">
             <label for="serch">your name</label><input id="serch"><button onclick="serch()">find</button>
-                <table class="ta" id="t3">
+                <table border="1" class="ta" id="t3">
                         <thead>
                             <tr>
                                 <th> id</th>
@@ -70,26 +71,30 @@
 
             </section>
         </div>
-    <div>
+    <div class="div4">
         <section class="s1" >
-        <select>
-            <option value="p1">taiman</option>
-            <option value="p2">london</option>
-            <option value="p3">israel</option>
-            <option value="p4">paris</option>
-            <option value="p5">prag</option>
-            <option value="p6">bodapest</option>
-            <option value="p7">oman</option>
-            <option value="p8">hungaria</option>
-            <option value="p9">germnaia</option>
-            <option value="p10">maroko</option>
+        <select id="select">
+            <option value="taiman">taiman</option>
+            <option value="london">london</option>
+            <option value="israel">israel</option>
+            <option value="paris">paris</option>
+            <option value="prag">prag</option>
+            <option value="bodapest">bodapest</option>
+            <option value="poman">oman</option>
+            <option value="hungaria">hungaria</option>
+            <option value="germnaia">germnaia</option>
+            <option value="maroko">maroko</option>
         </select>
+        <button type="button" onclick="totaltravel()">total travel</button><br><br><br>
+
+        <span id=totolostravels> </span>
         </section> 
 
 
 
     </div>
 </div>
+
 
 
 
